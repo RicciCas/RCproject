@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to Ricci Castillo #{title}
+  form(action="/", method="POST")
+  input(name="name", type="name", placeholder="Enter your First name")
+  input(name="email", type="email", placeholder="Enter your Email")
+  button(type="submit") Submit me
+
